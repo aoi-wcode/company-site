@@ -1,5 +1,5 @@
 import "./Works.css"
-import work1 from "../../assets/works/work1.jpg";
+import work1 from "../../assets/Works/work1.jpg";
 
 export default function Works() {
     return (
