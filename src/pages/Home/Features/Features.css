@@ -1,0 +1,335 @@
+.features {
+    padding: 140px 10%;
+    background: #f5f5f2;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.section-heading h2 {
+    margin: 0 0 24px;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #111;
+}
+
+.section-heading > p:last-child {
+    max-width: 520px;
+    margin: 0;
+    line-height: 1.9;
+    color: #666;
+}
+
+.features-list {
+    border-top: 1px solid #d8d8d5;
+}
+
+.feature-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    padding: 50px 0;
+
+    border-bottom: 1px solid #d8d8d5;
+
+    transition:
+            transform 0.3s ease,
+            background 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+.feature-title {
+    display: flex;
+    gap: 35px;
+}
+
+.feature-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.feature-en {
+    display: block;
+    margin-bottom: 14px;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 1;
+
+    color: #111;
+}
+
+.feature-title h3 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    color: #555;
+}
+
+.feature-detail {
+    max-width: 600px;
+}
+
+.feature-detail > p {
+    margin: 0 0 30px;
+    font-size: 13px;
+
+    line-height: 1.9;
+    color: #888;
+}
+
+/* 実際に触れるUI部分 */
+
+.feature-detail > * {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: 100px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    .feature-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        padding: 40px 0;
+    }
+
+    .feature-item:hover {
+        transform: none;
+    }
+
+    .feature-item:active {
+        transform: scale(0.99);
+    }
+
+    .feature-title {
+        gap: 20px;
+    }
+
+    .feature-en {
+        font-size: 16px;
+    }
+
+    .feature-title h3 {
+        font-size: 16px;
+    }
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 9px 16px;
+
+    border: 1px solid #111;
+    border-radius: 0;
+
+    background: transparent;
+    color: #111;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+            background 0.3s ease,
+            color 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background: #111;
+    color: #fff;
+}
+
+.feature-action {
+    padding: 10px 0;
+
+    border: none;
+    border-bottom: 1px solid #111;
+
+    background: transparent;
+    color: #111;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+            padding 0.3s ease;
+}
+
+.feature-action::after {
+    content: " →";
+    transition: margin-left 0.3s ease;
+}
+
+.feature-action:hover {
+    padding-right: 0;
+}
+
+.feature-action:hover::after {
+    margin-left: 6px;
+}
+
+.filter-results {
+    display: grid;
+    gap: 12px;
+}
+
+.filter-result {
+    padding: 18px 0;
+    border-bottom: 1px solid #d8d8d5;
+}
+
+.filter-result h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+}
+
+.filter-result p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.api-demo {
+    margin-top: 20px;
+}
+
+.api-demo > h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+}
+
+.api-demo > p {
+    margin: 0 0 30px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.api-demo > div {
+    max-height: 320px;
+    overflow-y: auto;
+
+    border-top: 1px solid #d8d8d5;
+}
+
+.api-demo > div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.api-demo > div::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.api-demo > div::-webkit-scrollbar-thumb {
+    background: #bbb;
+}
+
+.api-demo > div::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.api-demo article {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 8px 20px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #d8d8d5;
+}
+
+.api-demo article > p:first-child {
+    grid-column: 1;
+    margin: 0;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.api-demo article h3 {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+.api-demo article > p:nth-of-type(2) {
+    grid-column: 2;
+
+    margin: 0;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.api-demo article > p:last-child {
+    grid-column: 2;
+
+    margin: 8px 0 0;
+
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .api-demo article {
+        display: block;
+    }
+
+    .api-demo article h3 {
+        margin: 8px 0;
+    }
+
+    .api-demo article > p {
+        margin-bottom: 6px;
+    }
+}

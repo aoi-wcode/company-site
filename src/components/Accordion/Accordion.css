@@ -1,0 +1,32 @@
+.accordion {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.accordion-button:hover {
+    background: #f7f7f7;
+}
+
+.accordion-answer {
+    padding: 0 20px 20px;
+    color: #666;
+    line-height: 1.7;
+}

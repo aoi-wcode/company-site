@@ -1,26 +1,27 @@
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./sections/Hero/Hero";
-import Features from "./sections/Features/Features";
-import Services from "./sections/Services/Services.jsx";
-import Works from "./sections/Works/Works.jsx";
-import Contact from "./sections/Contact/Contact.jsx";
-import Footer from "./sections/footer/Footer.jsx";
-import Button from "./components/Button/Button.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home/Home.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Posts from "./pages/Posts";
+import Navigation from "./components/Navigation/Navigation.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
+
 function App() {
-  return (
-      <>
-          <Navbar />
-          <Hero />
-          <Features />
-          <Services />
-          <Works />
-          <Contact />
-          <Footer />
-          <Button />
+    return (
+        <BrowserRouter>
+            <Navigation />
 
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/posts" element={<Posts />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
 
-      </>
-  );
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,0 +1,155 @@
+.contact-page {
+    min-height: 100vh;
+    padding: 140px 10%;
+    background: #f5f5f2;
+    box-sizing: border-box;
+}
+
+.contact-heading {
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+.contact-heading .section-label {
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.contact-heading h1 {
+    margin: 0 0 24px;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: #111;
+}
+
+.contact-heading > p:last-child {
+    max-width: 500px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #888;
+}
+
+.contact-form {
+    max-width: 800px;
+    border-top: 1px solid #d8d8d5;
+}
+
+.form-group {
+    padding: 30px 0;
+    border-bottom: 1px solid #d8d8d5;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 0;
+
+    border: none;
+    border-bottom: 1px solid #bbb;
+
+    background: transparent;
+    outline: none;
+
+    font-size: 16px;
+    color: #111;
+
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #111;
+}
+
+.form-group textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-submit {
+    margin-top: 40px;
+    padding: 14px 24px;
+
+    border: 1px solid #111;
+    border-radius: 0;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+            background 0.3s ease,
+            color 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: transparent;
+    color: #111;
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 100px 20px;
+    }
+
+    .contact-heading {
+        margin-bottom: 60px;
+    }
+
+    .contact-heading h1 {
+        font-size: 48px;
+    }
+}
+
+.form-error {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #a66;
+}
+
+.form-success {
+    margin-top: 30px;
+    padding: 14px 18px;
+
+    border-left: 2px solid #6b8f71;
+
+    background: #f1f4f1;
+
+    font-size: 13px;
+    line-height: 1.8;
+    color: #4f6653;
+}
+
+.contact-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-submit-error {
+    margin-top: 30px;
+    padding: 14px 18px;
+
+    border-left: 2px solid #a66;
+    background: #f7f2f2;
+
+    font-size: 13px;
+    line-height: 1.8;
+    color: #8a5555;
+}

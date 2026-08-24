@@ -1,0 +1,103 @@
+.hero {
+    position: relative;
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 40px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+            linear-gradient(
+                    rgba(245, 245, 242, 0.88),
+                    rgba(245, 245, 242, 0.88)
+            ),
+            url("../../../assets/hero.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-label {
+    margin: 0 0 40px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #777;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(64px, 10vw, 120px);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -5px;
+
+    color: #111;
+}
+
+.hero-title {
+    margin: 45px 0 20px;
+
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 1.35;
+    letter-spacing: -1px;
+
+    color: #111;
+}
+
+.hero-description {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 2;
+
+    color: #666;
+}
+
+.hero-button {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 650px;
+        padding: 100px 20px;
+    }
+
+    .hero-label {
+        margin-bottom: 30px;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .hero-title {
+        margin-top: 35px;
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+}

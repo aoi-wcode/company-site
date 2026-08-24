@@ -1,0 +1,143 @@
+.services {
+    padding: 140px 10%;
+    background: #ffffff;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.section-heading h2 {
+    margin: 0 0 24px;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #111;
+}
+
+.section-heading > p:last-child {
+    max-width: 520px;
+    margin: 0;
+    line-height: 1.9;
+    color: #666;
+}
+
+.services-list {
+    border-top: 1px solid #ddd;
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    padding: 50px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    transition:
+            transform 0.3s ease,
+            background 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(10px);
+}
+
+.service-title {
+    display: flex;
+    gap: 35px;
+}
+
+.service-number {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+.service-en {
+    display: block;
+    margin-bottom: 14px;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 1;
+
+    color: #111;
+}
+
+.service-title h3 {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #555;
+}
+
+.service-detail {
+    max-width: 500px;
+}
+
+.service-detail p {
+    margin: 0 0 25px;
+
+    line-height: 1.9;
+    color: #666;
+}
+
+.service-skills {
+    display: inline-block;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 100px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    @media (max-width: 768px) {
+        .service-item {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 40px 0;
+
+            transition:
+                    transform 0.2s ease,
+                    background 0.2s ease;
+        }
+
+        .service-item:active {
+            transform: scale(0.98);
+            background: #f7f7f5;
+        }
+    }
+
+    .service-title {
+        gap: 20px;
+    }
+
+    .service-title h3 {
+        font-size: 24px;
+    }
+}

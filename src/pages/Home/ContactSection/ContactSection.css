@@ -1,0 +1,66 @@
+.contact-section {
+    padding: 140px 10%;
+    background: #f5f5f2;
+}
+
+.contact-section .contact-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.contact-section .section-label {
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.contact-section .contact-heading h2 {
+    margin: 0 0 24px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #111;
+}
+
+.contact-section .contact-heading > p:last-child {
+    max-width: 500px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #888;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #111;
+
+    color: #111;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.contact-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover .contact-arrow {
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 100px 20px;
+    }
+
+    .contact-section .contact-heading h2 {
+        font-size: 38px;
+    }
+}
